@@ -33,3 +33,5 @@ The server will print the actual local URL it is using, usually http://127.0.0.1
 
 - [Technical Docs](docs/technical-docs.md)
 - [Architecture Spec](docs/architecture-spec.md)
+- [Project Plan](docs/project-plan.md)
+- [Learning Guide](docs/learning-guide.md)
