@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla Web Starter</title>
+    <meta
+      name="description"
+      content="A simple starter experience built with plain HTML, CSS, and JavaScript."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Vanilla Web Starter</p>
+        <h1>Build fast with plain HTML, CSS, and JavaScript.</h1>
+        <p class="hero-copy">
+          This project shows how a lightweight web experience can feel polished without a framework.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#ideas">Start building</a>
+          <button id="theme-toggle" class="btn btn-secondary" type="button">Toggle theme</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel guide-section" aria-labelledby="guide-title">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Step-by-step</p>
+            <h2 id="guide-title">Build it in small, documented steps</h2>
+          </div>
+        </div>
+
+        <div class="steps">
+          <article class="step-card">
+            <span class="step-number">01</span>
+            <h3>Start with structure</h3>
+            <p>Place your main content in semantic HTML so the page is easy to read and extend.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">02</span>
+            <h3>Style the layout</h3>
+            <p>Use CSS to define spacing, colors, and responsive behavior without adding a framework.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">03</span>
+            <h3>Add simple interaction</h3>
+            <p>Use JavaScript for small features like toggles, forms, or local storage.</p>
+          </article>
+          <article class="step-card">
+            <span class="step-number">04</span>
+            <h3>Document as you go</h3>
+            <p>Keep a short README or in-page guide so the next change is easier to understand.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="ideas" class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Interactive demo</p>
+            <h2>Capture your next idea</h2>
+          </div>
+        </div>
+
+        <form id="idea-form" class="idea-form">
+          <label class="sr-only" for="idea-input">New idea</label>
+          <input id="idea-input" name="idea" type="text" placeholder="What should you build today?" required />
+          <button class="btn btn-primary" type="submit">Add idea</button>
+        </form>
+
+        <ul id="idea-list" class="idea-list"></ul>
+      </section>
+
+      <section class="panel learning-path" aria-labelledby="learning-title">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Learning path</p>
+            <h2 id="learning-title">Follow the path from structure to interaction</h2>
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>1. HTML</h3>
+            <p>Learn how semantic tags create the skeleton of the page, from headings and sections to forms.</p>
+          </article>
+          <article class="card">
+            <h3>2. CSS</h3>
+            <p>Use selectors, spacing, and colors to shape the visual experience and make it responsive.</p>
+          </article>
+          <article class="card">
+            <h3>3. JavaScript</h3>
+            <p>Add behavior like toggles, event handling, and local persistence without a framework.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built for the web in plain JavaScript • <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
