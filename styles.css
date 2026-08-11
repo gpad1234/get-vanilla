@@ -34,6 +34,23 @@ body {
   min-height: 100vh;
 }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  background: #ffffff;
+  color: #08111f;
+  padding: 0.55rem 0.8rem;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.skip-link:focus-visible {
+  top: 1rem;
+}
+
 .hero {
   padding: 4.5rem 1.5rem 3rem;
   display: grid;
@@ -94,6 +111,13 @@ h3 {
 
 .btn:hover {
   transform: translateY(-1px);
+}
+
+.btn:focus-visible,
+.idea-form input:focus-visible,
+a:focus-visible {
+  outline: 3px solid #ffd35a;
+  outline-offset: 2px;
 }
 
 .btn-primary {
@@ -181,6 +205,12 @@ main {
   background: var(--surface-strong);
   border-radius: 16px;
   padding: 0.9rem 1rem;
+}
+
+.status-message {
+  margin: 0.8rem 0 0;
+  min-height: 1.2rem;
+  color: var(--muted);
 }
 
 .card-grid {
